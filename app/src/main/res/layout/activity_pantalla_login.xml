@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#32A3B1"
+    android:backgroundTint="#82E9F6"
     tools:context=".Pantalla_Login">
 
     <EditText
@@ -42,7 +44,7 @@
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="128dp"
-        android:backgroundTint="#030E78"
+        android:backgroundTint="#F4511E"
         android:text="Entrar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +57,7 @@
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:backgroundTint="#030E78"
+        android:backgroundTint="#F4511E"
         android:text="Registrarse"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
