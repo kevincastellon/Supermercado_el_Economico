@@ -92,7 +92,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="?android:attr/colorActivatedHighlight"
         android:onClick="entrar"
-        android:text="ENTRAR"
+        android:text="INICIAR SECCION"
         android:textColor="@color/black" />
 
     <!--edittext 2 -->
@@ -102,24 +102,24 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnentrar"
         android:gravity="center"
-        android:text="¿crear cuenta ó restablecer Contraseña?"
+        android:text="¿crear usuario ó restablecer Contraseña?"
         android:textColor="@color/black"
         android:textSize="16sp" />
     <!--layout para los dos botones -->
     <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="58dp"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/txtopcion"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center">
         <!--boton registrar cuenta -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCrear"
-            android:layout_width="160dp"
-            android:layout_height="50dp"
+            android:layout_width="173dp"
+            android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
@@ -127,13 +127,13 @@
             android:layout_marginBottom="5dp"
             android:backgroundTint="?android:attr/colorActivatedHighlight"
             android:onClick="RegistroData"
-            android:text="Crear Cuenta"
+            android:text="CREAR USUARIO "
             android:textColor="@color/black" />
         <!--boton restablecer cuenta -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnrestablecer"
-            android:layout_width="160dp"
-            android:layout_height="50dp"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:backgroundTint="?android:attr/colorActivatedHighlight"
             android:text="Restablecer"
