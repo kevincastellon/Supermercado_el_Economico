@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Supermercado_el_Economico"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".Pantalla_Nueva_Password"
             android:exported="false" />
         <activity
             android:name=".Restablecer_contra"
-            android:exported="false" />
-        <activity
-            android:name=".Pantalla_Login"
             android:exported="false" />
         <activity
             android:name=".Pantalla_Inicio"
