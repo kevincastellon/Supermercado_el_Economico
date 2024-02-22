@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="401dp"
+        android:layout_height="271dp"
         app:srcCompat="@drawable/logo_oficial" />
 
     <TextView
@@ -65,34 +65,37 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="344dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtcodigoPadre"
-        android:layout_marginTop="5dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/txtMensaje"
-            android:layout_width="217dp"
-            android:layout_height="32dp"
+            android:layout_width="180dp"
+            android:layout_height="34dp"
             android:gravity="center"
             android:text="No has recibido el Codigo"
+            android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnreenviar"
-            android:layout_width="126dp"
+            android:layout_width="143dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:backgroundTint="?android:attr/colorActivatedHighlight"
             android:onClick="Reneviar"
             android:text="Reenviar"
-            android:textColor="@color/black" />
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
     </LinearLayout>
     <!--layout para los dos botones -->
     <LinearLayout

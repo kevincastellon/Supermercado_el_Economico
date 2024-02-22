@@ -25,11 +25,11 @@ public class Restablecer_contra extends AppCompatActivity {
         btnenviartocket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), Pantalla_verificacion.class);
-//                startActivity(intent);
+                Intent intent = new Intent(Restablecer_contra.this, Pantalla_verificacion.class);
+               startActivity(intent);
             }
         });
 
 
-}
+    }
 }
