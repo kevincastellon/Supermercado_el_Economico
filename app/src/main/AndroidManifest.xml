@@ -13,19 +13,7 @@
         android:theme="@style/Theme.Supermercado_el_Economico"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".Pantalla_Nueva_Password"
-            android:exported="false" />
-        <activity
-            android:name=".Restablecer_contra"
-            android:exported="false" />
-        <activity
             android:name=".Pantalla_Inicio"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Pantalla_Nueva_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Restablecer_contra"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

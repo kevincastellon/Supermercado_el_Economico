@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtcorreoEn =(TextInputEditText) findViewById(R.id.txtcorreoEn);
         txtpasswordEntrada =(TextInputEditText) findViewById(R.id.txtpasswordEntrada);
-        btnentrar =(MaterialButton) findViewById(R.id.btnentrar);
+        btnentrar =(MaterialButton) findViewById(R.id.btnreenviar);
         btnCrear =(MaterialButton) findViewById(R.id.btnCrear);
         btnestablecer =(MaterialButton) findViewById(R.id.btnrestablecer);
 

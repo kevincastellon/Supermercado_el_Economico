@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/logo_oficial" />
 
     <TextView
-        android:id="@+id/tvtitle"
+        android:id="@+id/tvverificacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -82,7 +82,7 @@
     </com.google.android.material.textfield.TextInputLayout>
     <!--Button entrar-->
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnentrar"
+        android:id="@+id/btnreenviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtpasswordEn"
@@ -90,7 +90,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:backgroundTint="@android:color/holo_red_light"
         android:onClick="entrar"
         android:text="INICIAR SECCION"
         android:textColor="@color/black" />
@@ -100,7 +100,7 @@
         android:id="@+id/txtopcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnentrar"
+        android:layout_below="@+id/btnreenviar"
         android:gravity="center"
         android:text="¿crear usuario ó restablecer Contraseña?"
         android:textColor="@color/black"
@@ -125,7 +125,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="?android:attr/colorActivatedHighlight"
+            android:backgroundTint="@android:color/holo_red_light"
             android:onClick="RegistroData"
             android:text="CREAR USUARIO "
             android:textColor="@color/black" />
@@ -135,7 +135,7 @@
             android:layout_width="170dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:backgroundTint="?android:attr/colorActivatedHighlight"
+            android:backgroundTint="@android:color/holo_red_light"
             android:text="Restablecer"
             android:textColor="@color/black" />
     </LinearLayout>
