@@ -6,55 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".Restablecer_contra">
 
-    <EditText
-        android:id="@+id/txtCorreoRecu"
-        android:layout_width="348dp"
-        android:layout_height="45dp"
-        android:ems="15"
-        android:hint="Ingrese su correo Electronico"
-        android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="20sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtCorreoRecuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="362dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-    <Button
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCorreoRecu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su correo electrónico"
+            app:boxBackgroundMode="outline"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnvercorreo"
         android:layout_width="315dp"
-        android:layout_height="47dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="615dp"
+        android:layout_marginEnd="48dp"
         android:backgroundTint="#030E78"
         android:text="Recuperar contraseña"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="562dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="341dp"
-        android:layout_height="45dp"
+        android:layout_width="318dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="231dp"
         android:fontFamily="sans-serif-black"
         android:text="Recuperación de contraseña"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreoRecuLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="129dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="262dp"
-        android:layout_height="192dp"
-        android:layout_marginTop="32dp"
-        android:text="Para poder recuperar su cuenta escriba su correo electronico registrado en la parte del texto donde se lo pide.Nosotros le enviaremos una contraseña temporar a su correo previamente registrado."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="4dp"
+        android:text="Para poder recuperar su cuenta, escriba su correo electrónico registrado en el campo de texto correspondiente. Nosotros le enviaremos una contraseña temporal a su correo previamente registrado."
         android:textAlignment="viewStart"
-        android:textSize="20sp"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_oficial" />
 </androidx.constraintlayout.widget.ConstraintLayout>

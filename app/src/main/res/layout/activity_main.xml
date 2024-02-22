@@ -1,18 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtcorreo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_username"
+        android:hint="Ingrese su Correo Eletronico"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtcorreoEn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="text"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--textview -->
+
+    <!--edittext 1 -->
+    <!--edittext 2 -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="401dp"
+        android:layout_height="301dp"
+        app:srcCompat="@drawable/logo_oficial" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtpasswordEn"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcorreo"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="@color/black"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/canado"
+        android:hint="Ingrese su Contraseña"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtpasswordEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Button entrar-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnentrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpasswordEn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:onClick="entrar"
+        android:text="ENTRAR"
+        android:textColor="@color/black" />
+
+    <!--edittext 2 -->
+    <TextView
+        android:id="@+id/txtopcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnentrar"
+        android:gravity="center"
+        android:text="¿crear cuenta ó restablecer Contraseña?"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <!--layout para los dos botones -->
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/txtopcion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
+        <!--boton registrar cuenta -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCrear"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="?android:attr/colorActivatedHighlight"
+            android:onClick="RegistroData"
+            android:text="Crear Cuenta"
+            android:textColor="@color/black" />
+        <!--boton restablecer cuenta -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnrestablecer"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="?android:attr/colorActivatedHighlight"
+            android:text="Restablecer"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</RelativeLayout>
