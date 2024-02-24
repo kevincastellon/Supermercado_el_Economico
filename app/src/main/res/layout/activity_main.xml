@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+
     tools:context=".MainActivity">
 
 
@@ -32,10 +33,7 @@
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--textview -->
 
-    <!--edittext 1 -->
-    <!--edittext 2 -->
 
     <ImageView
         android:id="@+id/imageView2"
@@ -90,7 +88,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@android:color/holo_red_light"
+        android:backgroundTint="#F17A0A"
         android:onClick="entrar"
         android:text="INICIAR SECCION"
         android:textColor="@color/black" />
@@ -125,7 +123,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="@android:color/holo_red_light"
+            android:backgroundTint="#F17A0A"
             android:onClick="RegistroData"
             android:text="CREAR USUARIO "
             android:textColor="@color/black" />
@@ -135,7 +133,7 @@
             android:layout_width="170dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:backgroundTint="@android:color/holo_red_light"
+            android:backgroundTint="#F17A0A"
             android:text="Restablecer"
             android:textColor="@color/black" />
     </LinearLayout>
