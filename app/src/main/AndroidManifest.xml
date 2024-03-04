@@ -43,6 +43,9 @@
             android:name=".registro_user"
             android:exported="false" />
         <activity
+            android:name=".registro_token"
+            android:exported="false" />
+        <activity
             android:name=".Pantalla_Inicio"
             android:exported="true">
             <intent-filter>
