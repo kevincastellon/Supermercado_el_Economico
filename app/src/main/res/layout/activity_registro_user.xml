@@ -30,7 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="91dp"
         android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="6dp"
+        android:gravity="center"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,9 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="133dp"
+
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#F17A0A"
         android:onClick="foto"
@@ -74,7 +76,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtnombreh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
 
             android:inputType="text"
             android:textColor="@color/black" />
@@ -98,7 +100,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtApellidoh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -121,7 +123,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtTelefonoh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -144,7 +146,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtDireccionh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -167,7 +169,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtCorreoh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -190,7 +192,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtUsuarioh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -214,7 +216,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtPassh"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="55dp"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
