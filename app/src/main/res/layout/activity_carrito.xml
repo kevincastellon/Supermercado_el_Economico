@@ -16,7 +16,7 @@
         app:menu="@menu/menu_carrito"
         android:background="?android:attr/colorActivatedHighlight"/>
 
-    <!-- SearchView -->
+    <!-- SearchView ksdd -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
