@@ -11,7 +11,7 @@
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/ic_order"
-        android:title="" />
+        android:title=""/>
 
     <item
         android:id="@+id/page_3"
